@@ -1,0 +1,1 @@
+This folder contains all files relating to music and sound FX. Ensure to categorize assets appropriately into folders.

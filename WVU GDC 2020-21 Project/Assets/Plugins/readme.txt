@@ -1,0 +1,1 @@
+This folder contains all third party plugins and Unity packages.

@@ -1,0 +1,1 @@
+This folder contains only script files. Only .cs and associated meta files should be stored here. Ensure to categorize scripts appropriately into folders.

@@ -1,0 +1,1 @@
+This folder contains only prefabs. Only .prefab and associated meta files should be stored here. Ensure to categorize assets appropriately into folders.

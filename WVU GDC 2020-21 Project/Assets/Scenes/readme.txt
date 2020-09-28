@@ -1,0 +1,1 @@
+This folder contains only scene files. Only .unity and associated meta files should be stored here.

@@ -1,0 +1,1 @@
+This folder contains all files relating to visuals, such as sprites, animations, and animators. Ensure to categorize assets appropriately into folders.
