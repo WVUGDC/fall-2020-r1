@@ -55,13 +55,17 @@ public class PlayerController : MonoBehaviour
 
     void Move()
     {
+        //sets the velocity of the rigidbody based on the movement direction, movement speed, and base speed
         rb.velocity = movementDirection * movementSpeed * MOVEMENT_BASE_SPEED;
     }
 
     void Animate()
     {
+        //Modifies the animator's Horizontal and Vertical floats based on the direction of movement
         animator.SetFloat("Horizontal", movementDirection.x);
         animator.SetFloat("Vertical", movementDirection.y);
+
+        //Modifies the animator's Speed float based on movementSpeed
         animator.SetFloat("Speed", movementSpeed);
     }
 }
