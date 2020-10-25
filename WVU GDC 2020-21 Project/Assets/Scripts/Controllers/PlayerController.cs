@@ -13,6 +13,8 @@ public class PlayerController : MonoBehaviour
     //base speed of character
     public float MOVEMENT_BASE_SPEED = 1.0f;
 
+    public float SPRINT_SPEED = 2.0f;
+
     [Space]
     [Header("Character Statistics:")]
     //speed of character
@@ -55,8 +57,14 @@ public class PlayerController : MonoBehaviour
 
     void Move()
     {
-        //sets the velocity of the rigidbody based on the movement direction, movement speed, and base speed
-        rb.velocity = movementDirection * movementSpeed * MOVEMENT_BASE_SPEED;
+        float boost = 1.0f;
+        if (Input.GetButton("Sprint"))
+            boost = SPRINT_SPEED;
+
+            //sets the velocity of the rigidbody based on the movement direction, movement speed, and base speed
+            //moves faster if the sprint button is pushed
+        rb.velocity = movementDirection * movementSpeed * MOVEMENT_BASE_SPEED * boost;
+
     }
 
     void Animate()

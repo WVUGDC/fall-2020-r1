@@ -545,7 +545,7 @@ GameObject:
   - component: {fileID: 433521906}
   - component: {fileID: 433521907}
   m_Layer: 9
-  m_Name: MainCharacterSheet_0
+  m_Name: MainChar10-25_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -605,7 +605,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 2092668033095938226, guid: b448676b4cd03d04485b6fe7146a5ce8, type: 3}
+  m_Sprite: {fileID: 295776710816017579, guid: 12d60ada7d6911847acbbd2b05aff3ca, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1821,6 +1821,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MOVEMENT_BASE_SPEED: 2
+  SPRINT_SPEED: 2
   movementSpeed: 0
   movementDirection: {x: 0, y: 0}
   rb: {fileID: 1936493905}
