@@ -92,6 +92,45 @@ TextureImporter:
   - first:
       213: -490605545323597662
     second: Test Sprite 9000_29
+  - first:
+      213: -1630284484598823647
+    second: Test Sprite 9000_30
+  - first:
+      213: -6244683743953484234
+    second: Test Sprite 9000_31
+  - first:
+      213: 4214197594281226345
+    second: Test Sprite 9000_32
+  - first:
+      213: 5829067930436772689
+    second: Test Sprite 9000_33
+  - first:
+      213: -8842969942970146811
+    second: Test Sprite 9000_34
+  - first:
+      213: -6159735995368182290
+    second: Test Sprite 9000_35
+  - first:
+      213: 5692443461017371690
+    second: Test Sprite 9000_36
+  - first:
+      213: 6216719738222116611
+    second: Test Sprite 9000_37
+  - first:
+      213: 3645300349464690913
+    second: Test Sprite 9000_38
+  - first:
+      213: -1292423430041624935
+    second: Test Sprite 9000_39
+  - first:
+      213: 1123894304050904227
+    second: Test Sprite 9000_40
+  - first:
+      213: -3726161760097226153
+    second: Test Sprite 9000_41
+  - first:
+      213: -7454423238821389763
+    second: Test Sprite 9000_42
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -122,7 +161,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: -1
     aniso: -1
     mipBias: -100
     wrapU: 1
@@ -215,8 +254,8 @@ TextureImporter:
       name: Test Sprite 9000_1
       rect:
         serializedVersion: 2
-        x: 64
-        y: 1536
+        x: 384
+        y: 1280
         width: 64
         height: 64
       alignment: 0
@@ -236,8 +275,8 @@ TextureImporter:
       name: Test Sprite 9000_2
       rect:
         serializedVersion: 2
-        x: 128
-        y: 1536
+        x: 512
+        y: 1344
         width: 64
         height: 64
       alignment: 0
@@ -257,8 +296,8 @@ TextureImporter:
       name: Test Sprite 9000_3
       rect:
         serializedVersion: 2
-        x: 192
-        y: 1536
+        x: 576
+        y: 1344
         width: 64
         height: 64
       alignment: 0
@@ -278,7 +317,7 @@ TextureImporter:
       name: Test Sprite 9000_4
       rect:
         serializedVersion: 2
-        x: 256
+        x: 64
         y: 1536
         width: 64
         height: 64
@@ -299,8 +338,8 @@ TextureImporter:
       name: Test Sprite 9000_5
       rect:
         serializedVersion: 2
-        x: 0
-        y: 1472
+        x: 128
+        y: 1536
         width: 64
         height: 64
       alignment: 0
@@ -320,8 +359,8 @@ TextureImporter:
       name: Test Sprite 9000_6
       rect:
         serializedVersion: 2
-        x: 64
-        y: 1472
+        x: 192
+        y: 1536
         width: 64
         height: 64
       alignment: 0
@@ -341,8 +380,8 @@ TextureImporter:
       name: Test Sprite 9000_7
       rect:
         serializedVersion: 2
-        x: 128
-        y: 1472
+        x: 256
+        y: 1536
         width: 64
         height: 64
       alignment: 0
@@ -362,8 +401,8 @@ TextureImporter:
       name: Test Sprite 9000_8
       rect:
         serializedVersion: 2
-        x: 192
-        y: 1472
+        x: 320
+        y: 1536
         width: 64
         height: 64
       alignment: 0
@@ -383,7 +422,7 @@ TextureImporter:
       name: Test Sprite 9000_9
       rect:
         serializedVersion: 2
-        x: 256
+        x: 0
         y: 1472
         width: 64
         height: 64
@@ -404,8 +443,8 @@ TextureImporter:
       name: Test Sprite 9000_10
       rect:
         serializedVersion: 2
-        x: 0
-        y: 1408
+        x: 64
+        y: 1472
         width: 64
         height: 64
       alignment: 0
@@ -425,8 +464,8 @@ TextureImporter:
       name: Test Sprite 9000_11
       rect:
         serializedVersion: 2
-        x: 64
-        y: 1408
+        x: 128
+        y: 1472
         width: 64
         height: 64
       alignment: 0
@@ -446,8 +485,8 @@ TextureImporter:
       name: Test Sprite 9000_12
       rect:
         serializedVersion: 2
-        x: 128
-        y: 1408
+        x: 192
+        y: 1472
         width: 64
         height: 64
       alignment: 0
@@ -467,8 +506,8 @@ TextureImporter:
       name: Test Sprite 9000_13
       rect:
         serializedVersion: 2
-        x: 192
-        y: 1408
+        x: 256
+        y: 1472
         width: 64
         height: 64
       alignment: 0
@@ -488,8 +527,8 @@ TextureImporter:
       name: Test Sprite 9000_14
       rect:
         serializedVersion: 2
-        x: 256
-        y: 1408
+        x: 320
+        y: 1472
         width: 64
         height: 64
       alignment: 0
@@ -510,7 +549,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 1344
+        y: 1408
         width: 64
         height: 64
       alignment: 0
@@ -531,7 +570,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 64
-        y: 1344
+        y: 1408
         width: 64
         height: 64
       alignment: 0
@@ -552,7 +591,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 128
-        y: 1344
+        y: 1408
         width: 64
         height: 64
       alignment: 0
@@ -573,7 +612,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 192
-        y: 1344
+        y: 1408
         width: 64
         height: 64
       alignment: 0
@@ -594,7 +633,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 256
-        y: 1344
+        y: 1408
         width: 64
         height: 64
       alignment: 0
@@ -614,8 +653,8 @@ TextureImporter:
       name: Test Sprite 9000_20
       rect:
         serializedVersion: 2
-        x: 0
-        y: 1280
+        x: 320
+        y: 1408
         width: 64
         height: 64
       alignment: 0
@@ -635,8 +674,8 @@ TextureImporter:
       name: Test Sprite 9000_21
       rect:
         serializedVersion: 2
-        x: 64
-        y: 1280
+        x: 0
+        y: 1344
         width: 64
         height: 64
       alignment: 0
@@ -656,8 +695,8 @@ TextureImporter:
       name: Test Sprite 9000_22
       rect:
         serializedVersion: 2
-        x: 128
-        y: 1280
+        x: 64
+        y: 1344
         width: 64
         height: 64
       alignment: 0
@@ -677,8 +716,8 @@ TextureImporter:
       name: Test Sprite 9000_23
       rect:
         serializedVersion: 2
-        x: 192
-        y: 1280
+        x: 128
+        y: 1344
         width: 64
         height: 64
       alignment: 0
@@ -698,8 +737,8 @@ TextureImporter:
       name: Test Sprite 9000_24
       rect:
         serializedVersion: 2
-        x: 256
-        y: 1280
+        x: 192
+        y: 1344
         width: 64
         height: 64
       alignment: 0
@@ -719,8 +758,8 @@ TextureImporter:
       name: Test Sprite 9000_25
       rect:
         serializedVersion: 2
-        x: 0
-        y: 1216
+        x: 256
+        y: 1344
         width: 64
         height: 64
       alignment: 0
@@ -740,8 +779,8 @@ TextureImporter:
       name: Test Sprite 9000_26
       rect:
         serializedVersion: 2
-        x: 64
-        y: 1216
+        x: 320
+        y: 1344
         width: 64
         height: 64
       alignment: 0
@@ -761,8 +800,8 @@ TextureImporter:
       name: Test Sprite 9000_27
       rect:
         serializedVersion: 2
-        x: 128
-        y: 1216
+        x: 0
+        y: 1280
         width: 64
         height: 64
       alignment: 0
@@ -782,8 +821,8 @@ TextureImporter:
       name: Test Sprite 9000_28
       rect:
         serializedVersion: 2
-        x: 192
-        y: 1216
+        x: 64
+        y: 1280
         width: 64
         height: 64
       alignment: 0
@@ -803,8 +842,8 @@ TextureImporter:
       name: Test Sprite 9000_29
       rect:
         serializedVersion: 2
-        x: 256
-        y: 1216
+        x: 128
+        y: 1280
         width: 64
         height: 64
       alignment: 0
@@ -816,6 +855,279 @@ TextureImporter:
       bones: []
       spriteID: 2a0762a1bd40139f0800000000000000
       internalID: -490605545323597662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Test Sprite 9000_30
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 1280
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12508ac16e01069e0800000000000000
+      internalID: -1630284484598823647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Test Sprite 9000_31
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 1280
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6360ffa783d6659a0800000000000000
+      internalID: -6244683743953484234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Test Sprite 9000_32
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 1280
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 960307c5266db7a30800000000000000
+      internalID: 4214197594281226345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Test Sprite 9000_33
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 1280
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1532e45266205e050800000000000000
+      internalID: 5829067930436772689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Test Sprite 9000_34
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 1280
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 500eecd50b5774580800000000000000
+      internalID: -8842969942970146811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Test Sprite 9000_35
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1216
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eed64e57fb8348aa0800000000000000
+      internalID: -6159735995368182290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Test Sprite 9000_36
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 1216
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a248fedfa2f9ffe40800000000000000
+      internalID: 5692443461017371690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Test Sprite 9000_37
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 1216
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30f73e01aa9364650800000000000000
+      internalID: 6216719738222116611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Test Sprite 9000_38
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 1216
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e0437daa55b69230800000000000000
+      internalID: 3645300349464690913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Test Sprite 9000_39
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 1216
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99e1af8ecb3601ee0800000000000000
+      internalID: -1292423430041624935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Test Sprite 9000_40
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 1216
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3acf9063aefd89f00800000000000000
+      internalID: 1123894304050904227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Test Sprite 9000_41
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 1216
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 752b2c90f930a4cc0800000000000000
+      internalID: -3726161760097226153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Test Sprite 9000_42
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 1216
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3a52ac3f819c8890800000000000000
+      internalID: -7454423238821389763
       vertices: []
       indices: 
       edges: []

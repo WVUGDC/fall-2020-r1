@@ -41,6 +41,9 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Cannot Pass
+    uniqueID: 4025635523
+    locked: 0
   - name: Ground
     uniqueID: 1614739585
     locked: 0
