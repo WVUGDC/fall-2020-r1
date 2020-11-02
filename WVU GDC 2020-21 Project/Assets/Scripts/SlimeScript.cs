@@ -26,6 +26,7 @@ public class SlimeScript : MonoBehaviour
     private float damageTimer;
     public float attackDamage = 15;
     public float attackRange = 1f;
+    public float walkRadius = 1.5f;
 
     public LayerMask layerMask;
 
@@ -48,7 +49,6 @@ public class SlimeScript : MonoBehaviour
         {
             damageTimer -= Time.deltaTime;
         }
-
         if (RemainingDistance(target, this.transform) <= 1f && _currentState != AIState.Attack && WallCheck())
         {
             _currentState = AIState.Attack;
@@ -65,6 +65,7 @@ public class SlimeScript : MonoBehaviour
                 }
             case AIState.Roaming:
                 {
+                    Wander();
                     break;
                 }
             case AIState.Follow:
@@ -87,7 +88,7 @@ public class SlimeScript : MonoBehaviour
                     break;
                 }
         }
-        print(_currentState);
+        print(timer);
     } 
 
     private void OnTriggerStay2D(Collider2D col) //This is when player is in range to be followed.
@@ -106,26 +107,33 @@ public class SlimeScript : MonoBehaviour
         }
     }
 
-    private IEnumerator WaitIdle()
+    /*private IEnumerator WaitIdle()
     {
         float waitTime = Random.Range(3, 5);
         yield return new WaitForSeconds(waitTime);
 
         if (!HasDestination() || _currentState == AIState.Idle)
         {
-            Invoke("Wander", 5);
+            InvokeRepeating("Wander", 1, waitTime);
         }
         else
         {
             CancelInvoke("Wander");
         }
         StartCoroutine(WaitIdle());
+    }*/
+    private void WaitTime()
+    {
 
     }
 
     private void Wander()  //Set Random Point. Then go to random point and set state to roaming.
     {
         //Random Point
+        Vector3 randomDirection = Random.insideUnitSphere * walkRadius;
+        transform.position = Vector2.MoveTowards(transform.position, randomDirection, speed * Time.deltaTime);
+        //randomDirection += transform.position;
+        //_currentState = AIState.Roaming;
 
         //Go to Random Point
     }
@@ -134,7 +142,7 @@ public class SlimeScript : MonoBehaviour
     {
         if (check == true)
         {
-            this.transform.position = Vector2.MoveTowards(this.transform.position, target.position, speed * Time.deltaTime);
+            transform.position = Vector2.MoveTowards(transform.position, target.position, speed * Time.deltaTime);
         }      
     }
 
@@ -169,7 +177,7 @@ public class SlimeScript : MonoBehaviour
 
         for (float t = 0; t < 1; t += Time.deltaTime / time)
         {
-            this.transform.position = Vector2.Lerp(AiPosition, TargetPosition + AiPosition, t); //Find something else
+            this.transform.position = Vector2.Lerp(AiPosition, TargetPosition + AiPosition, t);
             yield return null;
         }
     }
@@ -178,12 +186,15 @@ public class SlimeScript : MonoBehaviour
     {
         Gizmos.color = Color.yellow;
         Gizmos.DrawWireSphere(transform.position, attackRange);
+
+        Gizmos.color = Color.yellow;
+        Gizmos.DrawWireSphere(transform.position, walkRadius);
     }
 
     #region AI Commands (Will move later)
     private bool HasDestination()
     {
-        if (_currentState == AIState.Follow)
+        if (_currentState == AIState.Follow || _currentState == AIState.Roaming)
         {
             return true;
         }
