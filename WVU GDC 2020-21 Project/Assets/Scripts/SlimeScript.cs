@@ -88,7 +88,7 @@ public class SlimeScript : MonoBehaviour
                     break;
                 }
         }
-        print(timer);
+        //print(timer);
     } 
 
     private void OnTriggerStay2D(Collider2D col) //This is when player is in range to be followed.
