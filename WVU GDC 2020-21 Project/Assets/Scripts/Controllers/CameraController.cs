@@ -55,8 +55,9 @@ public class CameraController : MonoBehaviour
     void PanCamera()
     {
         // Calculates the point that the camera will track to (target's position plus velocity to "look ahead")
+        
+        Vector3 trackPosition = target.transform.position + (target.position - targetLastPos) / Time.unscaledDeltaTime * velocityFactor;
 
-        Vector3 trackPosition = target.transform.position + (target.position - targetLastPos)/Time.deltaTime * velocityFactor;
 
         // Smoothly move the camera towards that target position
         Vector3 targetPosition = Vector3.SmoothDamp(transform.position, trackPosition, ref velocity, panAdjustmentTime);
