@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5294b5e1e17ab7e439f6e237ed978879, type: 3}
+  m_Name: Slime Gun
+  m_EditorClassIdentifier: 
+  bulletPrefab: {fileID: 4115235465415778264, guid: 946516a233a330849ae7ec89ef338694, type: 3}
+  sprites:
+  - {fileID: 8865208874398379130, guid: 643a3d62d98d6fc4c91ee447206c4fc2, type: 3}
+  - {fileID: -9006457242435351090, guid: 643a3d62d98d6fc4c91ee447206c4fc2, type: 3}
+  - {fileID: -6652051979707390630, guid: 643a3d62d98d6fc4c91ee447206c4fc2, type: 3}
+  - {fileID: 367959204307477146, guid: 643a3d62d98d6fc4c91ee447206c4fc2, type: 3}
+  - {fileID: 5202558069584198717, guid: 643a3d62d98d6fc4c91ee447206c4fc2, type: 3}
+  - {fileID: -303014240106662772, guid: 643a3d62d98d6fc4c91ee447206c4fc2, type: 3}
+  - {fileID: 5119385079951816603, guid: 643a3d62d98d6fc4c91ee447206c4fc2, type: 3}
+  - {fileID: 380927070356627767, guid: 643a3d62d98d6fc4c91ee447206c4fc2, type: 3}
+  - {fileID: 2231278116009944462, guid: 643a3d62d98d6fc4c91ee447206c4fc2, type: 3}
+  - {fileID: 9099494772573181479, guid: 643a3d62d98d6fc4c91ee447206c4fc2, type: 3}
+  spriteRate: 20
+  color: {r: 1, g: 1, b: 1, a: 1}
+  size: 1
+  bulletSpeed: 2
+  bulletsPerSecond: 6.9
+  damage: 10
+  range: 20
+  clipSize: 162
+  reloadClipTime: 0.4
+  arc: 0
+  bulletsPerShot: 1
