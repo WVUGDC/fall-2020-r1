@@ -13,16 +13,15 @@ public class Projectile : MonoBehaviour
     private float timeLeft;
     private int currentIndex;
     private float spriteRate;
-
+    private ParticleSystem particles;
     // Start is called before the first frame update
     void Start()
     {
-        Invoke("KillMe", 10);
     }
 
     public void SetStats(float range, float speed, float damage, Color color, Sprite[] sprites, float spriteRate)
     {
-        Invoke("KillMe", range/speed);
+        StartCoroutine(StartFade(range/speed));
         this.speed = speed;
         this.damage = damage;
         sr.color = color;
@@ -36,8 +35,8 @@ public class Projectile : MonoBehaviour
             this.spriteRate = 0;
         if (GetComponent<ParticleSystem>())
         {
-            ParticleSystem ps = GetComponent<ParticleSystem>();
-            var main = ps.main;
+            particles = GetComponent<ParticleSystem>();
+            var main = particles.main;
             main.startColor = color;
         }
     }
@@ -63,9 +62,27 @@ public class Projectile : MonoBehaviour
         }
     }
 
+    IEnumerator StartFade(float time) 
+    {
+        for (float t = 0; t < 1; t += Time.deltaTime/(time*.75f))
+            yield return null;
+        Color startColor = sr.color;
+        Color endColor = startColor;
+        endColor.a = .2f;
+        for (float t = 0; t < 1; t += Time.deltaTime / (time * .25f))
+        {
+            sr.color = Color.Lerp(startColor, endColor, t);
+            yield return null;
+        }
+        KillMe();
+    }
     void KillMe()
     {
-        Destroy(this.gameObject);
+        GetComponent<Collider2D>().enabled = false;
+        GetComponent<SpriteRenderer>().enabled = false;
+        if (particles)
+            particles.Stop();
+        Destroy(this.gameObject, 1);
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {

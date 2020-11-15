@@ -17,13 +17,13 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 2429ce6c543a36549bb9a5a435f0c76c, type: 3}
   - {fileID: 21300000, guid: fb5284b3ae97ff041a48913ce5df2b15, type: 3}
   spriteRate: 20
-  color: {r: 0.013671875, g: 1, b: 0, a: 1}
+  color: {r: 1, g: 1, b: 1, a: 1}
   size: 1
-  bulletSpeed: 3
+  bulletSpeed: 5
   bulletsPerSecond: 5
   damage: 1
-  range: 4
+  range: 8
   clipSize: 0
   reloadClipTime: 1
-  arc: 20
+  arc: 5
   bulletsPerShot: 1

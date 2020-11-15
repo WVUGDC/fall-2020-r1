@@ -22,7 +22,7 @@ public class Weapon : ScriptableObject
     [Header("Core Stats")]
     [Tooltip("Speed of the bullet")]
     [Range(0, 30)]
-    public float bulletSpeed = 3;
+    public float bulletSpeed = 5;
     [Tooltip("Number of bullets fired per second")]
     [Range(0, 100)]
     public float bulletsPerSecond = 5;
@@ -31,7 +31,7 @@ public class Weapon : ScriptableObject
     public float damage = 10;
     [Tooltip("Range of bullet")]
     [Range(0, 20)]
-    public float range = 4;
+    public float range = 8;
     
     [Header("Optional Stats")]
     [Tooltip("Size of clip (use clips to create bursts of bullets). If set to 0, clips will not be used")]
@@ -39,10 +39,10 @@ public class Weapon : ScriptableObject
     public int clipSize = 0;
     [Tooltip("Time (in seconds) for reload")]
     [Range(0, 5)]
-    public float reloadClipTime = 2;
+    public float reloadClipTime = 1;
     [Tooltip("Spread of bullets (in degrees). Spread is random unless bulletsPerShot > 1")]
     [Range(0, 360)]
-    public float arc = 10;
+    public float arc = 5;
     [Tooltip("Bullets fired per shot. If greater than 1, bullets will be evenly spaced across arc")]
     [Range(1, 20)]
     public int bulletsPerShot = 1;
