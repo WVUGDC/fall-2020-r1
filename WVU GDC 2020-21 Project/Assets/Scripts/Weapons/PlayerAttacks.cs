@@ -1,10 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerAttacks : MonoBehaviour
 {
     public Weapon currentWeapon;
+    public TMPro.TMP_Text weaponText;
+    public Image fillImage;
 
     private float reloadDelay;
     private int bulletsLeftInClip;
@@ -37,6 +40,7 @@ public class PlayerAttacks : MonoBehaviour
                 reloadDelay += currentWeapon.reloadClipTime;
             }
         }
+        SetUI();
     }
     void CreateBullet(float angle)
     {
@@ -45,7 +49,13 @@ public class PlayerAttacks : MonoBehaviour
         bullet.GetComponent<Projectile>().SetStats(currentWeapon.range, currentWeapon.bulletSpeed,
             currentWeapon.damage, currentWeapon.color, currentWeapon.sprites, currentWeapon.spriteRate);
     }
-
+    void SetUI()
+    {
+        if (currentWeapon.clipSize > 0)
+            fillImage.fillAmount = (bulletsLeftInClip == currentWeapon.clipSize) ? 1 - reloadDelay / (1 / currentWeapon.bulletsPerSecond + currentWeapon.reloadClipTime) : (float)bulletsLeftInClip / currentWeapon.clipSize;
+        else
+            fillImage.fillAmount = (reloadDelay > 0) ? 1 - reloadDelay / (1 / currentWeapon.bulletsPerSecond) : 1;
+    }
     Quaternion GetAngleToMouse(float angleOffset)
     {
         Vector3 mousePos = Input.mousePosition;
@@ -56,5 +66,16 @@ public class PlayerAttacks : MonoBehaviour
         mousePos.y = mousePos.y - objectPos.y;
         float angle = ((Mathf.Atan2(mousePos.y, mousePos.x) + (Mathf.PI / 2))) * Mathf.Rad2Deg + angleOffset;
         return Quaternion.Euler(new Vector3(0, 0, angle));
+    }
+    public void SetWeapon(Weapon newWeapon)
+    {
+        currentWeapon = newWeapon;
+        weaponText.text = currentWeapon.name;
+        reloadDelay = 1 / currentWeapon.bulletsPerSecond;
+        if (currentWeapon.clipSize > 0)
+        {
+            bulletsLeftInClip = currentWeapon.clipSize;
+            reloadDelay += currentWeapon.reloadClipTime;
+        }
     }
 }

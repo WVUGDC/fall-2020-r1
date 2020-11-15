@@ -12,6 +12,7 @@ public class WeaponCycler : MonoBehaviour
     void Start()
     {
         playerAttacks = GetComponent<PlayerAttacks>();
+        playerAttacks.SetWeapon(weaponCollection.weapons[0]);
     }
 
     // Update is called once per frame
@@ -25,6 +26,6 @@ public class WeaponCycler : MonoBehaviour
         weaponIndex++;
         if (weaponIndex >= weaponCollection.weapons.Length)
             weaponIndex = 0;
-        playerAttacks.currentWeapon = weaponCollection.weapons[weaponIndex];
+        playerAttacks.SetWeapon(weaponCollection.weapons[weaponIndex]);
     }
 }

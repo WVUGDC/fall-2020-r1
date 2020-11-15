@@ -25,7 +25,7 @@ public class Weapon : ScriptableObject
     public float bulletSpeed = 5;
     [Tooltip("Number of bullets fired per second")]
     [Range(0, 100)]
-    public float bulletsPerSecond = 5;
+    public float bulletsPerSecond = 2;
     [Tooltip("Damage of bullets")]
     [Range(0, 200)]
     public float damage = 10;
