@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PauseScreen : MonoBehaviour
 {
@@ -20,7 +21,9 @@ public class PauseScreen : MonoBehaviour
 
     public void exitGame()
     {
-        Application.Quit();
+        Debug.Log("Went back to main menu");
+        //Application.Quit();
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
     }
     void Update()
     {
