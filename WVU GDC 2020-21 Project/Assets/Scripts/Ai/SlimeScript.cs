@@ -5,40 +5,51 @@ using UnityEngine.Animations;
 
 public class SlimeScript : MonoBehaviour
 {
+    /* IMPORTANT!!!
+    If you want to make any changes to this script, please duplicate this script
+    and rename the new script for whatever specific AI is. This is mainly for standard
+    enemies who just see and attack. If there are any bugs or problems with the script
+    please inform either London Bowen or Soren Kowalski.
+    */
     #region Variables
     private enum AIState
     {
         Idle,
         Roaming,
         Follow,
-        Alert,
-        Investigate,
         Attack,
     }
-    private Transform target;
 
+    private Transform target;
+    private Animator anim;
+
+    [Tooltip("The walk speed of the AI.")]
     public float speed;
 
-    public Animator anim;
-    private Rigidbody2D rb;
-
+    [Tooltip("How many seconds before the AI can deal damgage (not the same as attacking).")]
     public float damageCooldown;
     private float damageTimer;
-    public float attackDamage = 15;
-    public float attackRange = 1f;
-    public float walkRadius = 1.5f;
 
+    [Tooltip("How much damage the AI deals to the player.")]
+    public float attackDamage = 15;
+    [Tooltip("How far away the AI can attack from.")]
+    public float attackRange = 1f;
+
+    [Tooltip("The area in which the AI can wander in. Set to 0 if the AI does not move.")]
+    public float wanderRadius = 1.5f;
+
+    [Tooltip("ALWAYS SET THIS TO WALLS unless there is a special reason or condition for the AI.")]
     public LayerMask layerMask;
 
     private AIState _currentState;
     #endregion
 
+    #region AI Functions
     // Start is called before the first frame update
     void Start()
     {
         anim = this.GetComponent<Animator>();
         target = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
-        //StartCoroutine(WaitIdle());
         _currentState = AIState.Idle;
     }
 
@@ -73,14 +84,6 @@ public class SlimeScript : MonoBehaviour
                     Follow(true);
                     break;
                 }
-            case AIState.Alert:
-                {
-                    break;
-                }
-            case AIState.Investigate:
-                {
-                    break;
-                }
             case AIState.Attack:
                 {
                     Follow(false);
@@ -88,7 +91,6 @@ public class SlimeScript : MonoBehaviour
                     break;
                 }
         }
-        print(timer);
     } 
 
     private void OnTriggerStay2D(Collider2D col) //This is when player is in range to be followed.
@@ -107,36 +109,23 @@ public class SlimeScript : MonoBehaviour
         }
     }
 
-    /*private IEnumerator WaitIdle()
-    {
-        float waitTime = Random.Range(3, 5);
-        yield return new WaitForSeconds(waitTime);
-
-        if (!HasDestination() || _currentState == AIState.Idle)
-        {
-            InvokeRepeating("Wander", 1, waitTime);
-        }
-        else
-        {
-            CancelInvoke("Wander");
-        }
-        StartCoroutine(WaitIdle());
-    }*/
     private void WaitTime()
     {
 
     }
 
+    //NOT FINISHED
     private void Wander()  //Set Random Point. Then go to random point and set state to roaming.
     {
         //Random Point
-        Vector3 randomDirection = Random.insideUnitSphere * walkRadius;
+        Vector3 randomDirection = Random.insideUnitSphere * wanderRadius;
         transform.position = Vector2.MoveTowards(transform.position, randomDirection, speed * Time.deltaTime);
         //randomDirection += transform.position;
         //_currentState = AIState.Roaming;
 
         //Go to Random Point
     }
+    //============
 
     private void Follow(bool check)
     {
@@ -188,10 +177,10 @@ public class SlimeScript : MonoBehaviour
         Gizmos.DrawWireSphere(transform.position, attackRange);
 
         Gizmos.color = Color.yellow;
-        Gizmos.DrawWireSphere(transform.position, walkRadius);
+        Gizmos.DrawWireSphere(transform.position, wanderRadius);
     }
-
-    #region AI Commands (Will move later)
+    #endregion
+    #region AI Checks and Other Things (DO NOT CHANGE)
     private bool HasDestination()
     {
         if (_currentState == AIState.Follow || _currentState == AIState.Roaming)
