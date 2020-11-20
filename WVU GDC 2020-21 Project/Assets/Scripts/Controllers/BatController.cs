@@ -71,9 +71,9 @@ public class BatController : MonoBehaviour
     {
         //Modifies the animator's Horizontal and Vertical floats based on the direction of movement
         animator.SetFloat("Horizontal", movementDirection.x);
-        animator.SetFloat("Vertical", movementDirection.y);
+        //animator.SetFloat("Vertical", movementDirection.y);
 
         //Modifies the animator's Speed float based on movementSpeed
-        animator.SetFloat("Speed", movementSpeed);
+        //animator.SetFloat("Speed", movementSpeed);
     }
 }
