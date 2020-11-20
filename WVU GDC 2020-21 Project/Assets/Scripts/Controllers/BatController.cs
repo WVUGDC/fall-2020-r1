@@ -2,13 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerController : MonoBehaviour
+public class BatController : MonoBehaviour
 {
     //holds the player's ID
     //public int playerId;
 
-  
-    
+
+
     [Header("Character Attributes:")]
     //base speed of character
     public float MOVEMENT_BASE_SPEED = 1.0f;
@@ -33,7 +33,7 @@ public class PlayerController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        bat.SetActive(false);
     }
 
     // Update is called once per frame
@@ -56,8 +56,8 @@ public class PlayerController : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.E))
         {
-            vampire.SetActive(false);
-            bat.SetActive(true);
+            vampire.SetActive(true);
+            bat.SetActive(false);
         }
     }
 
@@ -71,9 +71,9 @@ public class PlayerController : MonoBehaviour
     {
         //Modifies the animator's Horizontal and Vertical floats based on the direction of movement
         animator.SetFloat("Horizontal", movementDirection.x);
-        animator.SetFloat("Vertical", movementDirection.y);
+        //animator.SetFloat("Vertical", movementDirection.y);
 
         //Modifies the animator's Speed float based on movementSpeed
-        animator.SetFloat("Speed", movementSpeed);
+        //animator.SetFloat("Speed", movementSpeed);
     }
 }
