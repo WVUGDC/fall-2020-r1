@@ -44,10 +44,18 @@ public class PlayerController : MonoBehaviour
 
     void ProcessInputs()
     {
-        movementDirection = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
+        Vector2 direction = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
+        if (direction.magnitude > 0)
+        {
+            movementDirection = direction;
 
-        //locks the speed between two points
-        movementSpeed = Mathf.Clamp(movementDirection.magnitude, 0.0f, 1.0f);
+            //locks the speed between two points
+            movementSpeed = Mathf.Clamp(movementDirection.magnitude, 0.0f, 1.0f);
+        }
+        else
+        {
+            movementSpeed = 0;
+        }
 
         //makes sure movementDirection is a unit vector
         movementDirection.Normalize();

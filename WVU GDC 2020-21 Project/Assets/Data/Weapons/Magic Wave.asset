@@ -26,4 +26,4 @@ MonoBehaviour:
   clipSize: 3
   reloadClipTime: 1
   arc: 58
-  bulletsPerShot: 1
+  bulletsPerShot: 5
