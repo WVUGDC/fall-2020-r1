@@ -1,0 +1,700 @@
+fileFormatVersion: 2
+guid: eb358608b2eac02489ad6bee33075839
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4827438454001470261
+    second: palceholderEnemySheet_0
+  - first:
+      213: 1650937642493382250
+    second: palceholderEnemySheet_1
+  - first:
+      213: -2997535576851374005
+    second: palceholderEnemySheet_2
+  - first:
+      213: 4547846805058177784
+    second: palceholderEnemySheet_3
+  - first:
+      213: -2814038724266790101
+    second: palceholderEnemySheet_4
+  - first:
+      213: 4268364922268218758
+    second: palceholderEnemySheet_5
+  - first:
+      213: -5272408326475476665
+    second: palceholderEnemySheet_6
+  - first:
+      213: -3085727932719938966
+    second: palceholderEnemySheet_7
+  - first:
+      213: -8100113592047671896
+    second: palceholderEnemySheet_8
+  - first:
+      213: -1540288593170623992
+    second: palceholderEnemySheet_9
+  - first:
+      213: 5196716282668348227
+    second: palceholderEnemySheet_10
+  - first:
+      213: 7537393084147306461
+    second: palceholderEnemySheet_11
+  - first:
+      213: -3232273706865695724
+    second: palceholderEnemySheet_12
+  - first:
+      213: -908955430855302135
+    second: palceholderEnemySheet_13
+  - first:
+      213: -1533252241141234698
+    second: palceholderEnemySheet_14
+  - first:
+      213: -5917459651011022831
+    second: palceholderEnemySheet_15
+  - first:
+      213: -1852874051064118594
+    second: palceholderEnemySheet_16
+  - first:
+      213: -4485224139277283990
+    second: palceholderEnemySheet_17
+  - first:
+      213: 5736577187487108729
+    second: palceholderEnemySheet_18
+  - first:
+      213: -776685725424830570
+    second: palceholderEnemySheet_19
+  - first:
+      213: 7529951569735869968
+    second: palceholderEnemySheet_20
+  - first:
+      213: -1839486604660723786
+    second: palceholderEnemySheet_21
+  - first:
+      213: 3171434526512386573
+    second: palceholderEnemySheet_22
+  - first:
+      213: -4062443644574237708
+    second: palceholderEnemySheet_23
+  - first:
+      213: -1145042388129272864
+    second: palceholderEnemySheet_24
+  - first:
+      213: 1184689491302554487
+    second: palceholderEnemySheet_25
+  - first:
+      213: 4714952697363887345
+    second: palceholderEnemySheet_26
+  - first:
+      213: -8860331132325524048
+    second: palceholderEnemySheet_27
+  - first:
+      213: -308487894162888441
+    second: palceholderEnemySheet_28
+  - first:
+      213: 9168988066823640996
+    second: palceholderEnemySheet_29
+  - first:
+      213: -7024393694202943184
+    second: palceholderEnemySheet_30
+  - first:
+      213: -8332828407172483889
+    second: palceholderEnemySheet_31
+  - first:
+      213: 6917357522014961981
+    second: palceholderEnemySheet_32
+  - first:
+      213: -450924678034516140
+    second: palceholderEnemySheet_33
+  - first:
+      213: -352373222579198224
+    second: palceholderEnemySheet_34
+  - first:
+      213: 5992428669079819015
+    second: palceholderEnemySheet_35
+  - first:
+      213: 2084169256676451299
+    second: palceholderEnemySheet_36
+  - first:
+      213: -8874012308814564585
+    second: palceholderEnemySheet_37
+  - first:
+      213: 3285029106535815090
+    second: palceholderEnemySheet_38
+  - first:
+      213: 1630607593982306956
+    second: palceholderEnemySheet_39
+  - first:
+      213: -7555473788768245444
+    second: palceholderEnemySheet_40
+  - first:
+      213: -6556997092710247880
+    second: palceholderEnemySheet_41
+  - first:
+      213: -9056437295318217077
+    second: palceholderEnemySheet_42
+  - first:
+      213: -215032647265915652
+    second: palceholderEnemySheet_43
+  - first:
+      213: -6405420275341049738
+    second: palceholderEnemySheet_44
+  - first:
+      213: 4846013508795472541
+    second: palceholderEnemySheet_45
+  - first:
+      213: 725008713792904517
+    second: palceholderEnemySheet_46
+  - first:
+      213: -4185065438959750375
+    second: palceholderEnemySheet_47
+  - first:
+      213: -9222163565055606753
+    second: palceholderEnemySheet_48
+  - first:
+      213: 5162314036010722803
+    second: palceholderEnemySheet_49
+  - first:
+      213: 9176378188053116083
+    second: palceholderEnemySheet_50
+  - first:
+      213: -6013781669303589082
+    second: palceholderEnemySheet_51
+  - first:
+      213: 8118215569919078005
+    second: palceholderEnemySheet_52
+  - first:
+      213: 1859197148925540211
+    second: palceholderEnemySheet_53
+  - first:
+      213: 8066168713930651669
+    second: palceholderEnemySheet_54
+  - first:
+      213: 5592253408808316997
+    second: palceholderEnemySheet_55
+  - first:
+      213: 2549364297152085354
+    second: palceholderEnemySheet_56
+  - first:
+      213: -1837410605919930222
+    second: palceholderEnemySheet_57
+  - first:
+      213: -8403810283926333505
+    second: palceholderEnemySheet_58
+  - first:
+      213: -3764474856564081428
+    second: palceholderEnemySheet_59
+  - first:
+      213: -3087555528520807713
+    second: palceholderEnemySheet_60
+  - first:
+      213: 6456841870151606672
+    second: palceholderEnemySheet_61
+  - first:
+      213: -9122509053345512019
+    second: palceholderEnemySheet_62
+  - first:
+      213: 3782352588103281068
+    second: palceholderEnemySheet_63
+  - first:
+      213: 5947562779886092169
+    second: palceholderEnemySheet_64
+  - first:
+      213: -2373034087218452577
+    second: palceholderEnemySheet_65
+  - first:
+      213: -1614865384361798351
+    second: palceholderEnemySheet_66
+  - first:
+      213: -7740955718995730345
+    second: palceholderEnemySheet_67
+  - first:
+      213: -5090358287903301300
+    second: palceholderEnemySheet_68
+  - first:
+      213: -6696660368396665871
+    second: palceholderEnemySheet_69
+  - first:
+      213: 6938972920020267271
+    second: palceholderEnemySheet_70
+  - first:
+      213: -6329026601083572768
+    second: palceholderEnemySheet_71
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: palceholderEnemySheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 448
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc47e2e8d4e710db0800000000000000
+      internalID: -4827438454001470261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: palceholderEnemySheet_1
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 448
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6e832fe90f49e610800000000000000
+      internalID: 1650937642493382250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: palceholderEnemySheet_2
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 448
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b40ad24464d9666d0800000000000000
+      internalID: -2997535576851374005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: palceholderEnemySheet_3
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 448
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8fa436cd2923d1f30800000000000000
+      internalID: 4547846805058177784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: palceholderEnemySheet_4
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 448
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2372ef80b682f8d0800000000000000
+      internalID: -2814038724266790101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: palceholderEnemySheet_5
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 448
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 685f88338474c3b30800000000000000
+      internalID: 4268364922268218758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: palceholderEnemySheet_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 320
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7411e9dbf84a4d6b0800000000000000
+      internalID: -5272408326475476665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: palceholderEnemySheet_7
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 320
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a624ab84bca4d25d0800000000000000
+      internalID: -3085727932719938966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: palceholderEnemySheet_8
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 320
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a56fa1ba9d969f80800000000000000
+      internalID: -8100113592047671896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: palceholderEnemySheet_9
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 320
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8029a707fabcf9ae0800000000000000
+      internalID: -1540288593170623992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: palceholderEnemySheet_10
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 320
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3437feafce17e1840800000000000000
+      internalID: 5196716282668348227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: palceholderEnemySheet_11
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 320
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ddf061143133a9860800000000000000
+      internalID: 7537393084147306461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: palceholderEnemySheet_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 192
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4146f6d5038a423d0800000000000000
+      internalID: -3232273706865695724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: palceholderEnemySheet_13
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 192
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 904253bf9ddb263f0800000000000000
+      internalID: -908955430855302135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: palceholderEnemySheet_14
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 192
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f384bfc53bc8bae0800000000000000
+      internalID: -1533252241141234698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: palceholderEnemySheet_15
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 192
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 110f7c8acc5f0eda0800000000000000
+      internalID: -5917459651011022831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: palceholderEnemySheet_16
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 192
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb2c8c41ed44946e0800000000000000
+      internalID: -1852874051064118594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: palceholderEnemySheet_17
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 192
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6dce58b86841c1c0800000000000000
+      internalID: -4485224139277283990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
