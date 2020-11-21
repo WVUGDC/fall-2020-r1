@@ -41,6 +41,8 @@ public class SlimeScript : MonoBehaviour
     [Tooltip("ALWAYS SET THIS TO WALLS unless there is a special reason or condition for the AI.")]
     public LayerMask layerMask;
 
+    private Rigidbody2D rb;
+
     private AIState _currentState;
     #endregion
 
@@ -51,6 +53,7 @@ public class SlimeScript : MonoBehaviour
         anim = this.GetComponent<Animator>();
         target = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
         _currentState = AIState.Idle;
+        rb = GetComponent<Rigidbody2D>();
     }
 
     // Update is called once per frame
@@ -70,23 +73,20 @@ public class SlimeScript : MonoBehaviour
             default:
             case AIState.Idle:
                 {
-                    Follow(false);
                     anim.SetBool("Attack", false);
                     break;
                 }
             case AIState.Roaming:
                 {
-                    Wander();
                     break;
                 }
             case AIState.Follow:
                 {
-                    Follow(true);
+                    MoveTo(target.position);
                     break;
                 }
             case AIState.Attack:
                 {
-                    Follow(false);
                     Attack();
                     break;
                 }
@@ -114,25 +114,14 @@ public class SlimeScript : MonoBehaviour
 
     }
 
-    //NOT FINISHED
     private void Wander()  //Set Random Point. Then go to random point and set state to roaming.
     {
-        //Random Point
-        Vector3 randomDirection = Random.insideUnitSphere * wanderRadius;
-        transform.position = Vector2.MoveTowards(transform.position, randomDirection, speed * Time.deltaTime);
-        //randomDirection += transform.position;
-        //_currentState = AIState.Roaming;
 
-        //Go to Random Point
     }
-    //============
 
-    private void Follow(bool check)
+    private void MoveTo(Vector3 targetPosition)
     {
-        if (check == true)
-        {
-            transform.position = Vector2.MoveTowards(transform.position, target.position, speed * Time.deltaTime);
-        }      
+        transform.position = Vector2.MoveTowards(transform.position, target.position, speed * Time.deltaTime);    
     }
 
     private void Attack()
@@ -191,6 +180,14 @@ public class SlimeScript : MonoBehaviour
         {
             return false;
         }
+    }
+
+    private bool IsMoving()
+    {
+        if (rb.velocity.magnitude > 0)
+            return true;
+        else
+            return false;
     }
 
     private float RemainingDistance(Transform point1, Transform point2)

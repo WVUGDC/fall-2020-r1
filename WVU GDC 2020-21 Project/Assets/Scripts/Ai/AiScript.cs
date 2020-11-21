@@ -11,7 +11,6 @@ public class AiScript : MonoBehaviour
     enemies who just see and attack. If there are any bugs or problems with the script
     please inform either London Bowen or Soren Kowalski.
     */
-
     #region Variables
     private enum AIState
     {
@@ -39,8 +38,10 @@ public class AiScript : MonoBehaviour
     [Tooltip("The area in which the AI can wander in. Set to 0 if the AI does not move.")]
     public float wanderRadius = 1.5f;
 
-    [Tooltip("ALWAYS SET THIS TO CANNOT PASS unless there is a special reason or condition for the AI.")]
+    [Tooltip("ALWAYS SET THIS TO WALLS unless there is a special reason or condition for the AI.")]
     public LayerMask layerMask;
+
+    private Rigidbody2D rb;
 
     private AIState _currentState;
     #endregion
@@ -52,6 +53,7 @@ public class AiScript : MonoBehaviour
         anim = this.GetComponent<Animator>();
         target = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
         _currentState = AIState.Idle;
+        rb = GetComponent<Rigidbody2D>();
     }
 
     // Update is called once per frame
@@ -71,23 +73,20 @@ public class AiScript : MonoBehaviour
             default:
             case AIState.Idle:
                 {
-                    Follow(false);
                     anim.SetBool("Attack", false);
                     break;
                 }
             case AIState.Roaming:
                 {
-                    Wander();
                     break;
                 }
             case AIState.Follow:
                 {
-                    Follow(true);
+                    MoveTo(target.position);
                     break;
                 }
             case AIState.Attack:
                 {
-                    Follow(false);
                     Attack();
                     break;
                 }
@@ -115,25 +114,14 @@ public class AiScript : MonoBehaviour
 
     }
 
-    //NOT FINISHED
     private void Wander()  //Set Random Point. Then go to random point and set state to roaming.
     {
-        //Random Point
-        Vector3 randomDirection = Random.insideUnitSphere * wanderRadius;
-        transform.position = Vector2.MoveTowards(transform.position, randomDirection, speed * Time.deltaTime);
-        //randomDirection += transform.position;
-        //_currentState = AIState.Roaming;
 
-        //Go to Random Point
     }
-    //============
 
-    private void Follow(bool check)
+    private void MoveTo(Vector3 targetPosition)
     {
-        if (check == true)
-        {
-            transform.position = Vector2.MoveTowards(transform.position, target.position, speed * Time.deltaTime);
-        }
+        transform.position = Vector2.MoveTowards(transform.position, target.position, speed * Time.deltaTime);
     }
 
     private void Attack()
@@ -192,6 +180,14 @@ public class AiScript : MonoBehaviour
         {
             return false;
         }
+    }
+
+    private bool IsMoving()
+    {
+        if (rb.velocity.magnitude > 0)
+            return true;
+        else
+            return false;
     }
 
     private float RemainingDistance(Transform point1, Transform point2)
